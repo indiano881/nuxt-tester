@@ -7,15 +7,17 @@
       </button>
       <nav :class="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="md:flex md:items-center">
         <ul class="flex flex-col md:flex-row">
-          <li class="p-2"><a href="/">Home</a></li>
-          <li class="p-2"><a href="/about">About</a></li>
-          <li class="p-2"><a href="/contact">Contact</a></li>
+          <li class="p-2"><NuxtLink href="/">Home</NuxtLink></li>
+          <li class="p-2"><NuxtLink href="/about">About</NuxtLink></li>
+          <li class="p-2"><NuxtLink href="/contact">Contact</NuxtLink></li>
         </ul>
       </nav>
     </header>
     </div>
   </template>
   <script>
+
+
   export default {
     data() {
       return {
