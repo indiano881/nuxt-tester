@@ -15,6 +15,17 @@ useHead({
   bodyAttrs: {
     class: 'test'
   },
-  script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
+  script: [ { innerHTML: 'console.log(\'Hello world\')' } ],
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/icon.svg' } // Add your favicon here
+  ]
+})
+useSeoMeta({
+  title: 'My Amazing Site',
+  ogTitle: 'My Amazing Site',
+  description: 'This is my amazing site, let me tell you all about it.',
+  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  ogImage: '/public/icon.svg',
+  twitterCard: 'summary_large_image',
 })
 </script>
