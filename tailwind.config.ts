@@ -7,7 +7,11 @@ export default {
     "./app.vue",
     "./error.vue",],
   theme: {
-    extend: {},
+    extend: {aspectRatio: {
+      auto: 'auto',
+      square: '1 / 1',
+      video: '16 / 9'
+    }},
   },
   plugins: [],
 }
